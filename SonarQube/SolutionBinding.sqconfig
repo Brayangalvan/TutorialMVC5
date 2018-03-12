@@ -1,0 +1,14 @@
+{
+  "ServerUri": "https://www.sonarcloud.io/",
+  "Organization": {
+    "Key": "brayangalvan-github",
+    "Name": "Brahyan Galvan"
+  },
+  "ProjectKey": "tutorialMVC5",
+  "Profiles": {
+    "CSharp": {
+      "ProfileKey": "AV_ZilJM1Q5aQJmOIMv0",
+      "ProfileTimestamp": "2018-03-12T06:56:15-05:00"
+    }
+  }
+}
