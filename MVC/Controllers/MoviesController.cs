@@ -17,13 +17,10 @@
             var genreLst = new List<string>();
             var genreQry = db.Movies.OrderBy(d => d.Genre).Select(d => d.Genre);
 
-            //genreLst.AddRange(genreQry.Distinct());
             genreLst.AddRange(genreQry);
-            ViewBag.movieGenre = new SelectList(genreLst);
-            /*
-             *Se utiliza para seleccionar el nombre en una lista desplegable
-             * ViewBag.movieGenre = new SelectList(genreLst,"Comedy");
-            */
+            //Se utiliza para seleccionar el nombre en una lista desplegable
+            ViewBag.movieGenre = new SelectList(genreLst, "Comedy");
+
             var movies = db.Movies.Select(m => m);
 
             if (!string.IsNullOrEmpty(searchString))
